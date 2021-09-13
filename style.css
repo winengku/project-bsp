@@ -271,8 +271,89 @@ p{
 .content-3-container .content-3 .right-col-content-3{
     text-align: center;
     margin: auto;
+    width: 65%;
 }
 
+.drainase-bandara{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 auto !important;
+    justify-content: flex-end;
+}
+
+.drainase-pelabuhan{
+    margin: auto 0 auto auto  !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.drainase-underpass{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.drainase-residential{
+    margin: auto 0 auto auto  !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.drainase-arena{
+    margin: auto 0 auto auto  !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.airside-img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 15px;
+}
+
+.airside-img p{
+    font-size: 18px;
+    line-height: 21.82px;
+    padding: 0 15px;
+}
+
+.airside-img img{
+    margin-top: 15px;
+}
+
+.landside-img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.landside-img p{
+    font-size: 18px;
+    line-height: 21.82px;
+    padding: 0 15px;
+}
+
+.landside-img img{
+    margin-bottom: 15px;
+}
+
+.underpass-1-img{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 95px;
+}
+
+.underpass-2-img{
+    display: flex;
+    justify-content: flex-end;
+}
 .cta-content{
     display: inline-flex;
     align-items: center;
