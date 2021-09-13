@@ -283,6 +283,11 @@ p{
     padding: 0 10px;
 }
 
+.content-3 .left-col-content-3 a{
+    text-decoration: none;
+    color: black;
+}
+
 /* why content */
 .why-content-container{
     width: 100%;
