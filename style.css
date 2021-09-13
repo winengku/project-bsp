@@ -176,6 +176,7 @@ p{
 
 .content-1-container .right-col-content-1 .img-2{
     margin-top: 45px;
+    margin-bottom: 140px;
 }
 
 .cta-container{
@@ -265,6 +266,11 @@ p{
 
 .content-3-container .content-3 .left-col-content-3 p{
     margin-bottom:27px;
+}
+
+.content-3-container .content-3 .right-col-content-3{
+    text-align: center;
+    margin: auto;
 }
 
 .cta-content{
