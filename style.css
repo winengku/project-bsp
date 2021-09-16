@@ -55,8 +55,8 @@ nav .fas{
 }
 
 .header-side img{
-    width: 26.47px;
-    height: auto;
+    width: 26.47px !important;
+    height: auto !important;
 }
 
 /* header*/
@@ -135,101 +135,6 @@ nav .fas{
     width: 100%;
 }
 
-/* header mobile style */
-
-@media only screen and (max-width: 768px) {
-    .logo-link{
-        width: 80%;
-    }
-
-    .header-side{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 22px;
-    }
-
-    nav .fas{
-        display: block;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    .header nav {
-        display: flex;
-        padding: 0 5%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .bg-white .nav-links{
-        position: absolute;
-        background: black;
-        height: 100vh;
-        width: 100%;
-        top: 0;
-        right: -100%;
-        color: white;
-        z-index: 3;
-        transition: 0.5s;
-    }
-
-    .bg-grey .nav-links{
-        position: absolute;
-        background: black;
-        height: 100vh;
-        width: 100%;
-        top: 0;
-        right: -100%;
-        color: white;
-        z-index: 3;
-        transition: 0.5s;
-    }
-
-    .nav-links .fas{
-        display: block;
-        color:white;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-
-    .bg-white .nav-links ul li {
-        list-style-type: none;
-        display: block;
-        padding: 0;
-        position: relative;
-        text-align: center;
-    }
-
-    .bg-grey .nav-links ul li {
-        list-style-type: none;
-        display: block;
-        padding: 0;
-        position: relative;
-        text-align: center;
-    }
-
-    .bg-white .nav-links ul li a{
-        text-decoration: none;
-        color:white;
-        font-size: 4vw;
-    }
-
-    .bg-grey .nav-links ul li a{
-        text-decoration: none;
-        color:white;
-    }
-
-    .bg-white .nav-links ul li:last-child {
-        padding: auto;
-    }
-
-    .bg-grey .nav-links ul li:last-child {
-        padding: auto;
-    }
-}
-
 /* home content 1 */
 
 .content-1-container{
@@ -254,9 +159,9 @@ nav .fas{
 }
 
 .left-col-content-1 h1{
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: 300;
-    line-height: 53px;
+    line-height: 100%;
     margin-bottom: 12%;
 }
 .right-col-content-1{
@@ -337,19 +242,24 @@ nav .fas{
 
 .content-2-container .content-2 .left-col-content-2 h1{
     font-weight: 400;
-    font-size: 45px;
+    font-size: 4vw;
 }
 
 .content-2-container .content-2 .right-col-content-2{
     width: 70%;
     background: #353333;
-    margin:70px 0;
+    margin:10% 0;
+}
+
+.video-container{
+    width: 750px;
+    height: 380px;
 }
 
 /* home content-3 */
 
 .content-3-container{
-    margin-top: 13px;
+    margin-top: 1%;
     width: 100%;
     background: #F5F5F5;
 }
@@ -371,8 +281,8 @@ nav .fas{
 .content-3-container .content-3 .left-col-content-3 h1{
     font-weight: 400;
     font-size: 45px;
-    margin-top: 125px;
-    margin-bottom:65px;
+    margin-top: 30%;
+    margin-bottom:10%;
 }
 
 .content-3-container .content-3 .left-col-content-3 h3{
@@ -382,7 +292,7 @@ nav .fas{
 }
 
 .content-3-container .content-3 .left-col-content-3 p{
-    margin-bottom:27px;
+    margin-bottom:5%;
 }
 
 .content-3-container .content-3 .right-col-content-3{
@@ -459,6 +369,7 @@ nav .fas{
 
 .landside-img img{
     margin-bottom: 15px;
+
 }
 
 .underpass-1-img{
@@ -920,7 +831,7 @@ nav .fas{
 .contact-container{
     width: 100%;
     text-align: left;
-    margin-top: 55px;
+    margin-top: 15%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -946,4 +857,255 @@ nav .fas{
 .footer-copyright{
     margin-top: 60px;
     font-size: 16px;
+}
+
+/* mobile style */
+
+@media only screen and (max-width: 768px) {
+    p{
+        font-size: 4vw;
+    }
+
+    .logo-link{
+        width: 80%;
+    }
+
+    .header-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 22px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .header nav {
+        display: flex;
+        padding: 0 5%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bg-white .nav-links{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        color: white;
+        z-index: 3;
+        transition: 0.5s;
+    }
+
+    .bg-grey .nav-links{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        color: white;
+        z-index: 3;
+        transition: 0.5s;
+    }
+
+    .nav-links .fas{
+        display: block;
+        color:white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+
+    .bg-white .nav-links ul li {
+        list-style-type: none;
+        display: block;
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .bg-grey .nav-links ul li {
+        list-style-type: none;
+        display: block;
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .bg-white .nav-links ul li a{
+        text-decoration: none;
+        color:white;
+        font-size: 4vw;
+    }
+
+    .bg-grey .nav-links ul li a{
+        text-decoration: none;
+        color:white;
+        font-size: 4vw;
+    }
+
+    .bg-white .nav-links ul li:last-child {
+        padding: auto;
+    }
+
+    .bg-grey .nav-links ul li:last-child {
+        padding: auto;
+    }
+
+    .content-1-container{
+        width: 100% !important;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-col-content-1 {
+        width: 100% !important;
+        margin: 10% 5%;
+    }
+
+    .right-col-content-1 {
+        width: 100% !important;
+    }
+
+    .left-col-content-1 h1{
+        margin-top: 15%;
+        font-size: 8vw !important;
+    }
+
+    .content-2{
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    .content-2 .left-col-content-2{
+        width: 100% !important;
+        margin: 10% 5%;
+    }
+    
+    .content-2-container .content-2 .left-col-content-2 h1{
+        font-size: 8vw !important;
+    }
+
+    .content-2 .right-col-content-2{
+        width: 90% !important;
+        margin: 0 auto !important;
+        margin-bottom: 10% !important;
+    }
+
+    .video-container{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .content-3{
+        width: 90% !important;
+        flex-direction: column;
+    }
+
+    .content-3-container .content-3 .left-col-content-3{
+        width: 100%;
+        height: auto;
+    }
+
+    .content-3-container .content-3 .left-col-content-3 h1{
+        margin-top:10%;
+    }
+
+    .content-3-container .content-3 .left-col-content-3 p{
+        width: 95%;
+    }
+
+    .content-3-container .content-3 .right-col-content-3{
+        width: 100%;
+        margin: 15% 0 !important;
+        margin-bottom: 10%;
+    }
+
+    .airside-img{
+        margin: 0 !important;
+        margin-right: 2% !important;
+        width: 50%;
+    }
+
+    .landside-img{
+        margin: 0 !important;
+        width: 50%;
+    }
+
+    .airside-img img{
+        width: 100%;
+    }
+
+    .landside-img img{
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    .drainase-pelabuhan img{
+        width: 100%;
+    }
+
+    .underpass-1-img{
+        margin: 0 !important;
+        margin-bottom: 3% !important;
+    }
+
+    .underpass-1-img img{
+        width: 80%;
+    }
+
+    .underpass-2-img{
+        margin: 0 !important;
+    }
+
+    .underpass-2-img img{
+        width: 80%;
+    }
+
+    .drainase-residential img{
+        width: 100%;
+    }
+
+    .drainase-arena img{
+        width: 100%;
+    }
+
+    .drainase-spbu img{
+        width: 100%;
+    }
+
+    .footer-container{
+        width: 90%;
+        padding-top: 10%;
+    }
+
+    .logo-footer-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo-footer-container img{
+        width: 100%;
+    }
+
+    .logo-footer img{
+        width: auto;
+    }
+
+    .address{
+        float: none;
+    }
+
+    .contact{
+        float: none;
+        margin-top: 10%;
+    }
 }
