@@ -10,6 +10,11 @@
     <!-- insert css -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- insert font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- insert font comic-sans regular-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,17 +30,22 @@
 
 <body>
     <!-- header -->
-    <section class="header-grey">
+    <section class="header bg-grey">
         <nav>
-            <a href="index.html"><img src="images/logo-white.png"></a>
-            <div class="nav-links">
+            <a class="logo-link" href="index.html"><img src="images/logo-white.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="header-side">
+                    <img src="images/logo-white-content.png" alt="">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                </div>
                 <ul>
                     <li><a href="aboutus.html">Mengapa BSP?</a></li>
                     <li><a href="product.html">Produk</a></li>
-                    <li><a href="index.html#solusi">Solusi</a></li>
+                    <li><a href="#solusi">Solusi</a></li>
                     <li><a href="contact.html">Hubungi Kami</a></li>
                 </ul>
             </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
 
@@ -149,10 +159,12 @@
 
     <!-- float button -->
     <div class="cta-container">
-        <div class="cta">
-            <img src="images/whatsapp-btn.png" />
-            <p>Messages us on WhatsApp</p>
-        </div>
+        <a href="http://wa.me/628113550057" target="_blank" rel="noopener noreferrer">
+            <div class="cta">
+                <img src="images/whatsapp-btn.png" />
+                <p>Messages us on WhatsApp</p>
+            </div>
+        </a>
     </div>
 
     <!-- footer -->
@@ -183,6 +195,19 @@
             </div>
         </div>
     </section>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
 
 </body>
 
