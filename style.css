@@ -217,6 +217,14 @@ nav .fas{
     margin-left:18px;
 }
 
+.cta .normal-cta{
+    display:block;
+}
+
+.cta .mobile-cta{
+    display:none;
+}
+
 /* home content 2 */
 
 .content-2-container{
@@ -1301,6 +1309,20 @@ nav .fas{
         width: 100%;
         margin: 3% 0;
         margin-bottom: 15%;
+    }
+
+    /* float button */
+    .cta{
+        height: 40px;
+        width: 150px;
+    }
+
+    .cta .normal-cta{
+        display: none;
+    }
+
+    .cta .mobile-cta{
+        display: block;
     }
 
     /* footer */
