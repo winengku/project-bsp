@@ -909,7 +909,7 @@ nav .fas{
     }
 
     .bg-white .nav-links{
-        position: absolute;
+        position: fixed;
         background: black;
         height: 100vh;
         width: 100%;
@@ -921,7 +921,7 @@ nav .fas{
     }
 
     .bg-grey .nav-links{
-        position: absolute;
+        position: fixed;
         background: black;
         height: 100vh;
         width: 100%;
