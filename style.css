@@ -960,6 +960,14 @@ nav .fas{
         font-size: 4vw;
     }
 
+    .bg-white .nav-links ul li::after{
+        content: '';
+    }
+    
+    .bg-grey .nav-links ul li::after{
+        content: '';
+    }
+
     .bg-white .nav-links ul li:last-child {
         padding: auto;
     }
