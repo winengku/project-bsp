@@ -34,17 +34,60 @@
     <section class="header bg-white">
         <nav>
             <a class="logo-link" href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links" id="navLinks">
+            <div class="navbar">
+                <a href="aboutus.html">Mengapa BSP?</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Produk<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="product.html#recyfix">RECYFIX®</a>
+                        <a href="product.html#sportfix">SPORTFIX®</a>
+                        <a href="product.html#faserfix">FASERFIX®</a>
+                        <a href="product.html#drainfix">DRAINFIX®</a>
+                        <a href="product.html#recifixpoint">RECYFIX®POINT</a>
+                        <a href="product.html#servicechannel">SERVICE CHANNEL</a>
+                        <a href="product.html#ecobloc">EcoBloc</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Solusi<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="index.html#bandara">Drainase Bandara</a>
+                        <a href="index.html#pelabuhan">Drainase Pelabuhan</a>
+                        <a href="index.html#underpass">Drainase Underpass</a>
+                        <a href="index.html#residential">Drainase Residential</a>
+                        <a href="index.html#arena-olahraga">Drainase Arena Olahraga</a>
+                        <a href="index.html#spbu">Drainase SPBU</a>
+                    </div>
+                </div>
+                <a href="contact.html">Hubungi Kami</a>
+            </div>
+
+            <div class="mobile-navbar" id="navLinks">
                 <div class="header-side">
                     <img src="images/logo-white-content.png" alt="">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                 </div>
-                <ul>
-                    <li><a href="aboutus.html">Mengapa BSP?</a></li>
-                    <li><a href="product.html">Produk</a></li>
-                    <li><a href="#solusi">Solusi</a></li>
-                    <li><a href="contact.html">Hubungi Kami</a></li>
-                </ul>
+                <a href="aboutus.html">Mengapa BSP?</a>
+                <button class="mobile-dropbtn">Produk<i class="fas fa-caret-down"></i></button>
+                <div class="mobile-dropdown">
+                    <a href="product.html#recyfix">RECYFIX®</a>
+                    <a href="product.html#sportfix">SPORTFIX®</a>
+                    <a href="product.html#faserfix">FASERFIX®</a>
+                    <a href="product.html#drainfix">DRAINFIX®</a>
+                    <a href="product.html#recifixpoint">RECYFIX®POINT</a>
+                    <a href="product.html#servicechannel">SERVICE CHANNEL</a>
+                    <a href="product.html#ecobloc">EcoBloc</a>
+                </div>
+                <button class="mobile-dropbtn">Solusi<i class="fas fa-caret-down"></i></button>
+                <div class="mobile-dropdown">
+                    <a href="index.html#bandara">Drainase Bandara</a>
+                    <a href="index.html#pelabuhan">Drainase Pelabuhan</a>
+                    <a href="index.html#underpass">Drainase Underpass</a>
+                    <a href="index.html#residential">Drainase Residential</a>
+                    <a href="index.html#arena-olahraga">Drainase Arena Olahraga</a>
+                    <a href="index.html#spbu">Drainase SPBU</a>
+                </div>
+                <a href="contact.html">Hubungi Kami</a>
             </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
@@ -136,6 +179,20 @@
 
         function hideMenu() {
             navLinks.style.right = "-100%";
+        }
+
+        var dropdown = document.getElementsByClassName("mobile-dropbtn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
         }
     </script>
 
