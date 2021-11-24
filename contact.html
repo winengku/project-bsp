@@ -43,9 +43,9 @@
                         <a href="product.html#sportfix">SPORTFIX®</a>
                         <a href="product.html#faserfix">FASERFIX®</a>
                         <a href="product.html#drainfix">DRAINFIX®</a>
-                        <a href="product.html#recifixpoint">RECYFIX®POINT</a>
+                        <a href="product.html#recifixpoint">RECYFIX® POINT</a>
                         <a href="product.html#servicechannel">SERVICE CHANNEL</a>
-                        <a href="product.html#ecobloc">EcoBloc</a>
+                        <a href="product.html#ecobloc">EcoBloc®</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -78,9 +78,9 @@
                     <a href="product.html#sportfix">SPORTFIX®</a>
                     <a href="product.html#faserfix">FASERFIX®</a>
                     <a href="product.html#drainfix">DRAINFIX®</a>
-                    <a href="product.html#recifixpoint">RECYFIX®POINT</a>
+                    <a href="product.html#recifixpoint">RECYFIX® POINT</a>
                     <a href="product.html#servicechannel">SERVICE CHANNEL</a>
-                    <a href="product.html#ecobloc">EcoBloc</a>
+                    <a href="product.html#ecobloc">EcoBloc®</a>
                 </div>
                 <button class="mobile-dropbtn">Solusi<i class="fas fa-caret-down"></i></button>
                 <div class="mobile-dropdown">
@@ -117,17 +117,31 @@
                     Whatsapp : +62 811 355 0057<br />
                     Email : info@bangunsolusindo.co.id
                 </p>
+
+                <h3>Showroom Jakarta</h3>
+                <p>
+                    Rukan Sedayu Square Blok M No. 005<br />
+                    RT 006 RW 012<br />
+                    Jl. Kamal Raya Outering Road<br />
+                    Kel. Cengkareng Barat<br />
+                    Kec. Cengkareng, Jakarta Barat 11730
+                </p>
+                <p>
+                    Phone: +62 21 225 536 77<br />
+                    Fax : +62 82 88 111 953395<br />
+                </p>
             </div>
             <div class="contact-right-col">
                 <h3>Contact Form</h3>
-                <form action="">
-                    <input class="fullname" type="text" placeholder="Fullname" required>
-                    <input class="email" type="email" placeholder="Email Address" required>
-                    <input type="text" placeholder="Title" required>
-                    <input type="text" placeholder="Company" required>
-                    <input type="tel" placeholder="Phone" required>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea rows="8" placeholder="Message" required></textarea>
+                <form action="action.php" method="post">
+                    <input class="fullname" name="name" type="text" placeholder="Fullname" required>
+                    <input class="email" name="email" type="email" placeholder="Email Address" required>
+                    <input type="text" name="middle_name" placeholder="middle_name" hidden>
+                    <input type="text" name="title" placeholder="Title" required>
+                    <input type="text" name="company" placeholder="Company" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
                     <button type="submit">Send Now</button>
                 </form>
             </div>
